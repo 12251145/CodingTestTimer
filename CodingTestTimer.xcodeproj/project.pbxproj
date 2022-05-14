@@ -7,26 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A2D34D3282EBC2F00A1EEC2 /* CodingTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34D2282EBC2F00A1EEC2 /* CodingTestViewController.swift */; };
+		6A2D34D5282EBC6400A1EEC2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34D4282EBC6400A1EEC2 /* HistoryViewController.swift */; };
+		6A2D34DD282F24FE00A1EEC2 /* CodingTestTimer_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34DC282F24FE00A1EEC2 /* CodingTestTimer_Tests.swift */; };
+		6A2D34E4282F7AF300A1EEC2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34E3282F7AF300A1EEC2 /* Colors.swift */; };
 		6AA99FBE282BD56B002554FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FBD282BD56B002554FE /* AppDelegate.swift */; };
 		6AA99FC0282BD56B002554FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FBF282BD56B002554FE /* SceneDelegate.swift */; };
-		6AA99FC2282BD56B002554FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FC1282BD56B002554FE /* ViewController.swift */; };
-		6AA99FC5282BD56B002554FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA99FC3282BD56B002554FE /* Main.storyboard */; };
+		6AA99FC2282BD56B002554FE /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FC1282BD56B002554FE /* RootTabBarViewController.swift */; };
 		6AA99FC7282BD56D002554FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA99FC6282BD56D002554FE /* Assets.xcassets */; };
 		6AA99FCA282BD56D002554FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA99FC8282BD56D002554FE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6A2D34DE282F24FE00A1EEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AA99FB2282BD56A002554FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AA99FB9282BD56A002554FE;
+			remoteInfo = CodingTestTimer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		6A2D34D2282EBC2F00A1EEC2 /* CodingTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingTestViewController.swift; sourceTree = "<group>"; };
+		6A2D34D4282EBC6400A1EEC2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		6A2D34DA282F24FE00A1EEC2 /* CodingTestTimer_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingTestTimer_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A2D34DC282F24FE00A1EEC2 /* CodingTestTimer_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingTestTimer_Tests.swift; sourceTree = "<group>"; };
+		6A2D34E3282F7AF300A1EEC2 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		6AA99FBA282BD56A002554FE /* CodingTestTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingTestTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA99FBD282BD56B002554FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AA99FBF282BD56B002554FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6AA99FC1282BD56B002554FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6AA99FC4282BD56B002554FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6AA99FC1282BD56B002554FE /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		6AA99FC6282BD56D002554FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AA99FC9282BD56D002554FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AA99FCB282BD56D002554FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6A2D34D7282F24FE00A1EEC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6AA99FB7282BD56A002554FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +61,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A2D34A7282E85E900A1EEC2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D34E3282F7AF300A1EEC2 /* Colors.swift */,
+				6AA99FBD282BD56B002554FE /* AppDelegate.swift */,
+				6AA99FBF282BD56B002554FE /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6A2D34D1282EB71D00A1EEC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6AA99FC1282BD56B002554FE /* RootTabBarViewController.swift */,
+				6A2D34D2282EBC2F00A1EEC2 /* CodingTestViewController.swift */,
+				6A2D34D4282EBC6400A1EEC2 /* HistoryViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A2D34DB282F24FE00A1EEC2 /* CodingTestTimer_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D34DC282F24FE00A1EEC2 /* CodingTestTimer_Tests.swift */,
+			);
+			path = CodingTestTimer_Tests;
+			sourceTree = "<group>";
+		};
 		6AA99FB1282BD56A002554FE = {
 			isa = PBXGroup;
 			children = (
 				6AA99FBC282BD56A002554FE /* CodingTestTimer */,
+				6A2D34DB282F24FE00A1EEC2 /* CodingTestTimer_Tests */,
 				6AA99FBB282BD56A002554FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				6AA99FBA282BD56A002554FE /* CodingTestTimer.app */,
+				6A2D34DA282F24FE00A1EEC2 /* CodingTestTimer_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,10 +110,8 @@
 		6AA99FBC282BD56A002554FE /* CodingTestTimer */ = {
 			isa = PBXGroup;
 			children = (
-				6AA99FBD282BD56B002554FE /* AppDelegate.swift */,
-				6AA99FBF282BD56B002554FE /* SceneDelegate.swift */,
-				6AA99FC1282BD56B002554FE /* ViewController.swift */,
-				6AA99FC3282BD56B002554FE /* Main.storyboard */,
+				6A2D34D1282EB71D00A1EEC2 /* View */,
+				6A2D34A7282E85E900A1EEC2 /* App */,
 				6AA99FC6282BD56D002554FE /* Assets.xcassets */,
 				6AA99FC8282BD56D002554FE /* LaunchScreen.storyboard */,
 				6AA99FCB282BD56D002554FE /* Info.plist */,
@@ -70,6 +122,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6A2D34D9282F24FE00A1EEC2 /* CodingTestTimer_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A2D34E2282F24FE00A1EEC2 /* Build configuration list for PBXNativeTarget "CodingTestTimer_Tests" */;
+			buildPhases = (
+				6A2D34D6282F24FE00A1EEC2 /* Sources */,
+				6A2D34D7282F24FE00A1EEC2 /* Frameworks */,
+				6A2D34D8282F24FE00A1EEC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A2D34DF282F24FE00A1EEC2 /* PBXTargetDependency */,
+			);
+			name = CodingTestTimer_Tests;
+			productName = CodingTestTimer_Tests;
+			productReference = 6A2D34DA282F24FE00A1EEC2 /* CodingTestTimer_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6AA99FB9282BD56A002554FE /* CodingTestTimer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AA99FCE282BD56D002554FE /* Build configuration list for PBXNativeTarget "CodingTestTimer" */;
@@ -97,6 +167,10 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					6A2D34D9282F24FE00A1EEC2 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 6AA99FB9282BD56A002554FE;
+					};
 					6AA99FB9282BD56A002554FE = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
@@ -116,45 +190,63 @@
 			projectRoot = "";
 			targets = (
 				6AA99FB9282BD56A002554FE /* CodingTestTimer */,
+				6A2D34D9282F24FE00A1EEC2 /* CodingTestTimer_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6A2D34D8282F24FE00A1EEC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6AA99FB8282BD56A002554FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6AA99FCA282BD56D002554FE /* LaunchScreen.storyboard in Resources */,
 				6AA99FC7282BD56D002554FE /* Assets.xcassets in Resources */,
-				6AA99FC5282BD56B002554FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6A2D34D6282F24FE00A1EEC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A2D34DD282F24FE00A1EEC2 /* CodingTestTimer_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6AA99FB6282BD56A002554FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AA99FC2282BD56B002554FE /* ViewController.swift in Sources */,
+				6A2D34D3282EBC2F00A1EEC2 /* CodingTestViewController.swift in Sources */,
+				6A2D34E4282F7AF300A1EEC2 /* Colors.swift in Sources */,
+				6AA99FC2282BD56B002554FE /* RootTabBarViewController.swift in Sources */,
 				6AA99FBE282BD56B002554FE /* AppDelegate.swift in Sources */,
 				6AA99FC0282BD56B002554FE /* SceneDelegate.swift in Sources */,
+				6A2D34D5282EBC6400A1EEC2 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		6AA99FC3282BD56B002554FE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6AA99FC4282BD56B002554FE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		6A2D34DF282F24FE00A1EEC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AA99FB9282BD56A002554FE /* CodingTestTimer */;
+			targetProxy = 6A2D34DE282F24FE00A1EEC2 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		6AA99FC8282BD56D002554FE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -166,6 +258,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6A2D34E0282F24FE00A1EEC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CU5DL5JJWC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghdps.CodingTestTimer-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodingTestTimer.app/CodingTestTimer";
+			};
+			name = Debug;
+		};
+		6A2D34E1282F24FE00A1EEC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CU5DL5JJWC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghdps.CodingTestTimer-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodingTestTimer.app/CodingTestTimer";
+			};
+			name = Release;
+		};
 		6AA99FCC282BD56D002554FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -292,7 +420,6 @@
 				INFOPLIST_FILE = CodingTestTimer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +447,6 @@
 				INFOPLIST_FILE = CodingTestTimer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +465,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6A2D34E2282F24FE00A1EEC2 /* Build configuration list for PBXNativeTarget "CodingTestTimer_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A2D34E0282F24FE00A1EEC2 /* Debug */,
+				6A2D34E1282F24FE00A1EEC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6AA99FB5282BD56A002554FE /* Build configuration list for PBXProject "CodingTestTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
