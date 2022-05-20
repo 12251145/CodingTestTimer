@@ -5,12 +5,15 @@
 //  Created by Hoen on 2022/05/14.
 //
 
+import Combine
 import Foundation
 import UIKit
 
 class CodingTestViewController: UIViewController {
-    private let countDownTimer = UIDatePicker()
-    private var startButton: UIButton?
+    var viewModel = CodingTestViewModel()
+    
+    private var timeDisplay: UILabel!
+    private var timeIncreaseButton: UIButton!
     
     convenience init(title: String, bgColor: UIColor) {
         self.init()
@@ -20,72 +23,61 @@ class CodingTestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setCountDown()
-        setStartButton()
-    }
-    
-    
-    // MARK: - countDownTimer
-    
-    func setCountDown() {
-        setCountDownAttributes()
-        setCountDownConstraints()
-    }
-    
-    func setCountDownAttributes() {
-        countDownTimer.preferredDatePickerStyle = .automatic
-        countDownTimer.locale = NSLocale.current
-        countDownTimer.datePickerMode = .countDownTimer
-        countDownTimer.addTarget(self, action: #selector(test), for: .valueChanged)
-    }
-    
-    func setCountDownConstraints() {
-        view.addSubview(countDownTimer)
-        countDownTimer.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            countDownTimer.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            countDownTimer.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            countDownTimer.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            countDownTimer.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0)
-        ])
-    }
-    
-    // MARK: - startButton
-    
-    func setStartButton() {
-        setStartButtonConfiguration()
-        setStartButtonConstraints()
-    }
-    
-    func setStartButtonConfiguration() {
-        var config = UIButton.Configuration.filled()
-        config.buttonSize = .large
-        config.title = "시작"
-        config.background.backgroundColor = .buttonBlue
-        
-        startButton = UIButton(configuration: config)
-    }
-    
-    func setStartButtonConstraints() {
-        guard let startButton = startButton else { return }
 
+        setTimeDisplayLabel()
+        setTimeIncreaseButton()
         
-        view.addSubview(startButton)
-        startButton.translatesAutoresizingMaskIntoConstraints = false
+        self.viewModel.$timeLimit
+            .sink { value in
+                self.timeDisplay.text = "\(value)"
+            }
+            .store(in: &viewModel.subscriptions)
+    }
+    
+    // MARK: - 시간 설정 Label
+    func setTimeDisplayLabel() {
+        timeDisplay = UILabel()
+        timeDisplay.text = "\(viewModel.timeLimit)"
+        timeDisplay.font = UIFont.systemFont(ofSize: 70, weight: .semibold)
+
+        timeDisplay.textAlignment = .center
+        timeDisplay.clipsToBounds = true
+        
+        view.addSubview(timeDisplay)
+        
+        timeDisplay.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            startButton.topAnchor.constraint(equalTo: countDownTimer.bottomAnchor, constant: 20),
-            startButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            startButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            startButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+            timeDisplay.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
+            timeDisplay.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            timeDisplay.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            timeDisplay.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10)
         ])
     }
     
-    // MARK: - actions
-    @objc
-    private func test(_ sender: UIDatePicker) {
-        print(sender.countDownDuration)
+    // MARK: - 시간 증가 버튼
+    func setTimeIncreaseButton() {
+        timeIncreaseButton = UIButton.init(primaryAction: UIAction(handler: { _ in
+            self.viewModel.increaseTimeLimit(0.5)
+        }))
+        
+        var config = UIButton.Configuration.filled()
+        config.baseBackgroundColor = .buttonBlue
+        config.buttonSize = .large
+        config.title = "+0.5"
+        
+        timeIncreaseButton.configuration = config
+        
+        view.addSubview(timeIncreaseButton)
+        
+        timeIncreaseButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            timeIncreaseButton.topAnchor.constraint(equalTo: timeDisplay.bottomAnchor, constant: 30),
+            timeIncreaseButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            
+        ])
+        
     }
+
 }

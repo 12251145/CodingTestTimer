@@ -11,6 +11,7 @@
 		6A2D34D5282EBC6400A1EEC2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34D4282EBC6400A1EEC2 /* HistoryViewController.swift */; };
 		6A2D34DD282F24FE00A1EEC2 /* CodingTestTimer_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34DC282F24FE00A1EEC2 /* CodingTestTimer_Tests.swift */; };
 		6A2D34E4282F7AF300A1EEC2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34E3282F7AF300A1EEC2 /* Colors.swift */; };
+		6A3D96B82835D5EB007B8D7F /* CodingTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3D96B72835D5EB007B8D7F /* CodingTestViewModel.swift */; };
 		6AA99FBE282BD56B002554FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FBD282BD56B002554FE /* AppDelegate.swift */; };
 		6AA99FC0282BD56B002554FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FBF282BD56B002554FE /* SceneDelegate.swift */; };
 		6AA99FC2282BD56B002554FE /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FC1282BD56B002554FE /* RootTabBarViewController.swift */; };
@@ -34,6 +35,7 @@
 		6A2D34DA282F24FE00A1EEC2 /* CodingTestTimer_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingTestTimer_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2D34DC282F24FE00A1EEC2 /* CodingTestTimer_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingTestTimer_Tests.swift; sourceTree = "<group>"; };
 		6A2D34E3282F7AF300A1EEC2 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		6A3D96B72835D5EB007B8D7F /* CodingTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingTestViewModel.swift; sourceTree = "<group>"; };
 		6AA99FBA282BD56A002554FE /* CodingTestTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingTestTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA99FBD282BD56B002554FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AA99FBF282BD56B002554FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 			path = CodingTestTimer_Tests;
 			sourceTree = "<group>";
 		};
+		6A3D96B62835CE9C007B8D7F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6A3D96B72835D5EB007B8D7F /* CodingTestViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		6AA99FB1282BD56A002554FE = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 		6AA99FBC282BD56A002554FE /* CodingTestTimer */ = {
 			isa = PBXGroup;
 			children = (
+				6A3D96B62835CE9C007B8D7F /* ViewModel */,
 				6A2D34D1282EB71D00A1EEC2 /* View */,
 				6A2D34A7282E85E900A1EEC2 /* App */,
 				6AA99FC6282BD56D002554FE /* Assets.xcassets */,
@@ -227,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A3D96B82835D5EB007B8D7F /* CodingTestViewModel.swift in Sources */,
 				6A2D34D3282EBC2F00A1EEC2 /* CodingTestViewController.swift in Sources */,
 				6A2D34E4282F7AF300A1EEC2 /* Colors.swift in Sources */,
 				6AA99FC2282BD56B002554FE /* RootTabBarViewController.swift in Sources */,
