@@ -9,11 +9,6 @@ import Foundation
 import UIKit
 
 class HistoryViewController: UIViewController {
-    convenience init(title: String, bgColor: UIColor) {
-        self.init()
-        self.title = title
-        self.view.backgroundColor = bgColor
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

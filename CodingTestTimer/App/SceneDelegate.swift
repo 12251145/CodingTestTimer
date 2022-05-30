@@ -10,7 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var appCoordinator: AppCoordinator?
     
     // 화면이 연결 되기 전
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -19,22 +19,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         // guard let _ = (scene as? UIWindowScene) else { return }
         
-        // 윈도우 씬을 가져온다.
+        let navigationController = UINavigationController()
+        
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        
-        // 윈도우 크기 설정
-        window = UIWindow(frame: UIScreen.main.bounds)
-        
-        // 뷰컨트롤러 인스턴스 가져오기
-        let vc = RootTabBarViewController()
-        
-        // 뿌리 뷰컨트롤러 설정
-        window?.rootViewController = vc
-        
-        // 윈도우 보이기
+                
+        window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         
-        window?.windowScene = windowScene
+        self.appCoordinator = DefaultAppCoordinator(navigationController)
+        self.appCoordinator?.start()
+        
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

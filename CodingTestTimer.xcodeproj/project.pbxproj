@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A2D34D3282EBC2F00A1EEC2 /* CodingTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34D2282EBC2F00A1EEC2 /* CodingTestViewController.swift */; };
+		6A2D34D3282EBC2F00A1EEC2 /* CTSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34D2282EBC2F00A1EEC2 /* CTSettingViewController.swift */; };
 		6A2D34D5282EBC6400A1EEC2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34D4282EBC6400A1EEC2 /* HistoryViewController.swift */; };
 		6A2D34DD282F24FE00A1EEC2 /* CodingTestTimer_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34DC282F24FE00A1EEC2 /* CodingTestTimer_Tests.swift */; };
 		6A2D34E4282F7AF300A1EEC2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34E3282F7AF300A1EEC2 /* Colors.swift */; };
-		6A3D96B82835D5EB007B8D7F /* CodingTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3D96B72835D5EB007B8D7F /* CodingTestViewModel.swift */; };
+		6A3625AC2843B7E00062E44C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625AB2843B7E00062E44C /* Coordinator.swift */; };
+		6A3625AF2843B8210062E44C /* CoordinatorFinishDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625AE2843B8210062E44C /* CoordinatorFinishDelegate.swift */; };
+		6A3625B12843B8EB0062E44C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625B02843B8EB0062E44C /* AppCoordinator.swift */; };
+		6A3625B32843BE970062E44C /* DefaultAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625B22843BE970062E44C /* DefaultAppCoordinator.swift */; };
+		6A3625B52843C50E0062E44C /* DefaultTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625B42843C50E0062E44C /* DefaultTabBarCoordinator.swift */; };
+		6A3625B72843C5B00062E44C /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625B62843C5B00062E44C /* TabBarCoordinator.swift */; };
+		6A3625BA2844A88D0062E44C /* TabBarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625B92844A88D0062E44C /* TabBarPage.swift */; };
+		6A3625BE2844AD1F0062E44C /* CTSettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625BD2844AD1F0062E44C /* CTSettingCoordinator.swift */; };
+		6A3625C02844AD7E0062E44C /* DefaultCTSettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625BF2844AD7E0062E44C /* DefaultCTSettingCoordinator.swift */; };
+		6A3625C22844F32C0062E44C /* CTSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625C12844F32C0062E44C /* CTSettingViewModel.swift */; };
+		6A3625C62844F3F20062E44C /* CTSettingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625C52844F3F20062E44C /* CTSettingUseCase.swift */; };
+		6A3625C82844F4090062E44C /* DefaultCTSettingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625C72844F4090062E44C /* DefaultCTSettingUseCase.swift */; };
+		6A3625CA2844F6A50062E44C /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625C92844F6A50062E44C /* CoordinatorType.swift */; };
 		6AA99FBE282BD56B002554FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FBD282BD56B002554FE /* AppDelegate.swift */; };
 		6AA99FC0282BD56B002554FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FBF282BD56B002554FE /* SceneDelegate.swift */; };
-		6AA99FC2282BD56B002554FE /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FC1282BD56B002554FE /* RootTabBarViewController.swift */; };
 		6AA99FC7282BD56D002554FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA99FC6282BD56D002554FE /* Assets.xcassets */; };
 		6AA99FCA282BD56D002554FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA99FC8282BD56D002554FE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -30,16 +41,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6A2D34D2282EBC2F00A1EEC2 /* CodingTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingTestViewController.swift; sourceTree = "<group>"; };
+		6A2D34D2282EBC2F00A1EEC2 /* CTSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTSettingViewController.swift; sourceTree = "<group>"; };
 		6A2D34D4282EBC6400A1EEC2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		6A2D34DA282F24FE00A1EEC2 /* CodingTestTimer_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingTestTimer_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2D34DC282F24FE00A1EEC2 /* CodingTestTimer_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingTestTimer_Tests.swift; sourceTree = "<group>"; };
 		6A2D34E3282F7AF300A1EEC2 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		6A3D96B72835D5EB007B8D7F /* CodingTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingTestViewModel.swift; sourceTree = "<group>"; };
+		6A3625AB2843B7E00062E44C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6A3625AE2843B8210062E44C /* CoordinatorFinishDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFinishDelegate.swift; sourceTree = "<group>"; };
+		6A3625B02843B8EB0062E44C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		6A3625B22843BE970062E44C /* DefaultAppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppCoordinator.swift; sourceTree = "<group>"; };
+		6A3625B42843C50E0062E44C /* DefaultTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTabBarCoordinator.swift; sourceTree = "<group>"; };
+		6A3625B62843C5B00062E44C /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		6A3625B92844A88D0062E44C /* TabBarPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPage.swift; sourceTree = "<group>"; };
+		6A3625BD2844AD1F0062E44C /* CTSettingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTSettingCoordinator.swift; sourceTree = "<group>"; };
+		6A3625BF2844AD7E0062E44C /* DefaultCTSettingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCTSettingCoordinator.swift; sourceTree = "<group>"; };
+		6A3625C12844F32C0062E44C /* CTSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTSettingViewModel.swift; sourceTree = "<group>"; };
+		6A3625C52844F3F20062E44C /* CTSettingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTSettingUseCase.swift; sourceTree = "<group>"; };
+		6A3625C72844F4090062E44C /* DefaultCTSettingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCTSettingUseCase.swift; sourceTree = "<group>"; };
+		6A3625C92844F6A50062E44C /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
 		6AA99FBA282BD56A002554FE /* CodingTestTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingTestTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA99FBD282BD56B002554FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AA99FBF282BD56B002554FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6AA99FC1282BD56B002554FE /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		6AA99FC6282BD56D002554FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AA99FC9282BD56D002554FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AA99FCB282BD56D002554FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,16 +95,6 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		6A2D34D1282EB71D00A1EEC2 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6AA99FC1282BD56B002554FE /* RootTabBarViewController.swift */,
-				6A2D34D2282EBC2F00A1EEC2 /* CodingTestViewController.swift */,
-				6A2D34D4282EBC6400A1EEC2 /* HistoryViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		6A2D34DB282F24FE00A1EEC2 /* CodingTestTimer_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,12 +103,199 @@
 			path = CodingTestTimer_Tests;
 			sourceTree = "<group>";
 		};
-		6A3D96B62835CE9C007B8D7F /* ViewModel */ = {
+		6A362567284208A90062E44C /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				6A3D96B72835D5EB007B8D7F /* CodingTestViewModel.swift */,
+				6A362568284208B50062E44C /* Entities */,
+				6A362569284208CD0062E44C /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6A362568284208B50062E44C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		6A362569284208CD0062E44C /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625C32844F3E00062E44C /* CTSetting */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		6A36256C284208E90062E44C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625A82843B61F0062E44C /* Common */,
+				6A36256E2842092D0062E44C /* CTSettingScene */,
+				6A36256D284209220062E44C /* HistoryScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6A36256D284209220062E44C /* HistoryScene */ = {
+			isa = PBXGroup;
+			children = (
+				6A362572284209640062E44C /* ViewModel */,
+				6A362571284209600062E44C /* View */,
+			);
+			path = HistoryScene;
+			sourceTree = "<group>";
+		};
+		6A36256E2842092D0062E44C /* CTSettingScene */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625BB2844AC600062E44C /* Coordinator */,
+				6A362570284209460062E44C /* ViewModel */,
+				6A36256F284209430062E44C /* View */,
+			);
+			path = CTSettingScene;
+			sourceTree = "<group>";
+		};
+		6A36256F284209430062E44C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D34D2282EBC2F00A1EEC2 /* CTSettingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A362570284209460062E44C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625C12844F32C0062E44C /* CTSettingViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6A362571284209600062E44C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D34D4282EBC6400A1EEC2 /* HistoryViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A362572284209640062E44C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6A362573284209CF0062E44C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6A362575284209FB0062E44C /* PersistentStorages */,
+				6A362574284209F20062E44C /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6A362574284209F20062E44C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		6A362575284209FB0062E44C /* PersistentStorages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PersistentStorages;
+			sourceTree = "<group>";
+		};
+		6A3625A72843900E0062E44C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625B82844A8810062E44C /* Constant */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		6A3625A82843B61F0062E44C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625A92843B6360062E44C /* Coordinator */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6A3625A92843B6360062E44C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625B22843BE970062E44C /* DefaultAppCoordinator.swift */,
+				6A3625B42843C50E0062E44C /* DefaultTabBarCoordinator.swift */,
+				6A3625AA2843B7D40062E44C /* Protocol */,
+				6A3625AD2843B8100062E44C /* Delegate */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		6A3625AA2843B7D40062E44C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625AB2843B7E00062E44C /* Coordinator.swift */,
+				6A3625B02843B8EB0062E44C /* AppCoordinator.swift */,
+				6A3625B62843C5B00062E44C /* TabBarCoordinator.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6A3625AD2843B8100062E44C /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625AE2843B8210062E44C /* CoordinatorFinishDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		6A3625B82844A8810062E44C /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625B92844A88D0062E44C /* TabBarPage.swift */,
+				6A3625C92844F6A50062E44C /* CoordinatorType.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		6A3625BB2844AC600062E44C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625BF2844AD7E0062E44C /* DefaultCTSettingCoordinator.swift */,
+				6A3625BC2844AC670062E44C /* Protocol */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		6A3625BC2844AC670062E44C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625BD2844AD1F0062E44C /* CTSettingCoordinator.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6A3625C32844F3E00062E44C /* CTSetting */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625C72844F4090062E44C /* DefaultCTSettingUseCase.swift */,
+				6A3625C42844F3E80062E44C /* Protocol */,
+			);
+			path = CTSetting;
+			sourceTree = "<group>";
+		};
+		6A3625C42844F3E80062E44C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625C52844F3F20062E44C /* CTSettingUseCase.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		6AA99FB1282BD56A002554FE = {
@@ -120,9 +319,11 @@
 		6AA99FBC282BD56A002554FE /* CodingTestTimer */ = {
 			isa = PBXGroup;
 			children = (
-				6A3D96B62835CE9C007B8D7F /* ViewModel */,
-				6A2D34D1282EB71D00A1EEC2 /* View */,
+				6A3625A72843900E0062E44C /* Util */,
 				6A2D34A7282E85E900A1EEC2 /* App */,
+				6A362567284208A90062E44C /* Domain */,
+				6A36256C284208E90062E44C /* Presentation */,
+				6A362573284209CF0062E44C /* Data */,
 				6AA99FC6282BD56D002554FE /* Assets.xcassets */,
 				6AA99FC8282BD56D002554FE /* LaunchScreen.storyboard */,
 				6AA99FCB282BD56D002554FE /* Info.plist */,
@@ -238,13 +439,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A3D96B82835D5EB007B8D7F /* CodingTestViewModel.swift in Sources */,
-				6A2D34D3282EBC2F00A1EEC2 /* CodingTestViewController.swift in Sources */,
+				6A3625C82844F4090062E44C /* DefaultCTSettingUseCase.swift in Sources */,
+				6A3625BA2844A88D0062E44C /* TabBarPage.swift in Sources */,
+				6A3625B32843BE970062E44C /* DefaultAppCoordinator.swift in Sources */,
+				6A3625B52843C50E0062E44C /* DefaultTabBarCoordinator.swift in Sources */,
+				6A3625B72843C5B00062E44C /* TabBarCoordinator.swift in Sources */,
+				6A2D34D3282EBC2F00A1EEC2 /* CTSettingViewController.swift in Sources */,
 				6A2D34E4282F7AF300A1EEC2 /* Colors.swift in Sources */,
-				6AA99FC2282BD56B002554FE /* RootTabBarViewController.swift in Sources */,
+				6A3625AF2843B8210062E44C /* CoordinatorFinishDelegate.swift in Sources */,
 				6AA99FBE282BD56B002554FE /* AppDelegate.swift in Sources */,
+				6A3625C22844F32C0062E44C /* CTSettingViewModel.swift in Sources */,
+				6A3625C02844AD7E0062E44C /* DefaultCTSettingCoordinator.swift in Sources */,
 				6AA99FC0282BD56B002554FE /* SceneDelegate.swift in Sources */,
+				6A3625B12843B8EB0062E44C /* AppCoordinator.swift in Sources */,
+				6A3625BE2844AD1F0062E44C /* CTSettingCoordinator.swift in Sources */,
+				6A3625CA2844F6A50062E44C /* CoordinatorType.swift in Sources */,
 				6A2D34D5282EBC6400A1EEC2 /* HistoryViewController.swift in Sources */,
+				6A3625AC2843B7E00062E44C /* Coordinator.swift in Sources */,
+				6A3625C62844F3F20062E44C /* CTSettingUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
