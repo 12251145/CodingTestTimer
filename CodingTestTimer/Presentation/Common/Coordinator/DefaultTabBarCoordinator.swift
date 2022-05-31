@@ -64,7 +64,10 @@ final class DefaultTabBarCoordinator: TabBarCoorinator {
             self.childCoordinators.append(ctSettingCoordinator)
             ctSettingCoordinator.start()
         case .history:
-            print("do right thing")
+            let historyCoordinator = DefaultHistoryCoordinator(tabNavigationController)
+            historyCoordinator.finishDelegate = self
+            self.childCoordinators.append(historyCoordinator)
+            historyCoordinator.start()
         }
     }
 }

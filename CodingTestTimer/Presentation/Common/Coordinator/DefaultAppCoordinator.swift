@@ -34,10 +34,5 @@ final class DefaultAppCoordinator: AppCoordinator {
 extension DefaultAppCoordinator: CoordinatorFinishDelegate {
     func coordinatorDidFinish(childCoordinator: Coordinator) {
         self.childCoordinators = self.childCoordinators.filter({ $0.type != childCoordinator.type })
-        
-        self.navigationController.view.backgroundColor = .systemBackground
-        self.navigationController.viewControllers.removeAll()
-        
-        showTabBarFlow()
     }
 }

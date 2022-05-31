@@ -10,7 +10,7 @@
 		6A2D34D3282EBC2F00A1EEC2 /* CTSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34D2282EBC2F00A1EEC2 /* CTSettingViewController.swift */; };
 		6A2D34D5282EBC6400A1EEC2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34D4282EBC6400A1EEC2 /* HistoryViewController.swift */; };
 		6A2D34DD282F24FE00A1EEC2 /* CodingTestTimer_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34DC282F24FE00A1EEC2 /* CodingTestTimer_Tests.swift */; };
-		6A2D34E4282F7AF300A1EEC2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34E3282F7AF300A1EEC2 /* Colors.swift */; };
+		6A2D34E4282F7AF300A1EEC2 /* UIColor + CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D34E3282F7AF300A1EEC2 /* UIColor + CustomColor.swift */; };
 		6A3625AC2843B7E00062E44C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625AB2843B7E00062E44C /* Coordinator.swift */; };
 		6A3625AF2843B8210062E44C /* CoordinatorFinishDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625AE2843B8210062E44C /* CoordinatorFinishDelegate.swift */; };
 		6A3625B12843B8EB0062E44C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625B02843B8EB0062E44C /* AppCoordinator.swift */; };
@@ -24,6 +24,12 @@
 		6A3625C62844F3F20062E44C /* CTSettingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625C52844F3F20062E44C /* CTSettingUseCase.swift */; };
 		6A3625C82844F4090062E44C /* DefaultCTSettingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625C72844F4090062E44C /* DefaultCTSettingUseCase.swift */; };
 		6A3625CA2844F6A50062E44C /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625C92844F6A50062E44C /* CoordinatorType.swift */; };
+		6A3625CE28450E350062E44C /* HistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625CD28450E350062E44C /* HistoryCoordinator.swift */; };
+		6A3625D028450E4D0062E44C /* DefaultHistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625CF28450E4D0062E44C /* DefaultHistoryCoordinator.swift */; };
+		6A3625D228450F770062E44C /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625D128450F770062E44C /* HistoryViewModel.swift */; };
+		6A3625D628450FCF0062E44C /* HistoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625D528450FCF0062E44C /* HistoryUseCase.swift */; };
+		6A3625D828450FED0062E44C /* DefaultHistoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625D728450FED0062E44C /* DefaultHistoryUseCase.swift */; };
+		6A3625DB2845C9120062E44C /* UIControl + ButtonPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625DA2845C9120062E44C /* UIControl + ButtonPublisher.swift */; };
 		6AA99FBE282BD56B002554FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FBD282BD56B002554FE /* AppDelegate.swift */; };
 		6AA99FC0282BD56B002554FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FBF282BD56B002554FE /* SceneDelegate.swift */; };
 		6AA99FC7282BD56D002554FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA99FC6282BD56D002554FE /* Assets.xcassets */; };
@@ -45,7 +51,7 @@
 		6A2D34D4282EBC6400A1EEC2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		6A2D34DA282F24FE00A1EEC2 /* CodingTestTimer_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingTestTimer_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2D34DC282F24FE00A1EEC2 /* CodingTestTimer_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingTestTimer_Tests.swift; sourceTree = "<group>"; };
-		6A2D34E3282F7AF300A1EEC2 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		6A2D34E3282F7AF300A1EEC2 /* UIColor + CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + CustomColor.swift"; sourceTree = "<group>"; };
 		6A3625AB2843B7E00062E44C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		6A3625AE2843B8210062E44C /* CoordinatorFinishDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFinishDelegate.swift; sourceTree = "<group>"; };
 		6A3625B02843B8EB0062E44C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -59,6 +65,12 @@
 		6A3625C52844F3F20062E44C /* CTSettingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTSettingUseCase.swift; sourceTree = "<group>"; };
 		6A3625C72844F4090062E44C /* DefaultCTSettingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCTSettingUseCase.swift; sourceTree = "<group>"; };
 		6A3625C92844F6A50062E44C /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
+		6A3625CD28450E350062E44C /* HistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCoordinator.swift; sourceTree = "<group>"; };
+		6A3625CF28450E4D0062E44C /* DefaultHistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHistoryCoordinator.swift; sourceTree = "<group>"; };
+		6A3625D128450F770062E44C /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		6A3625D528450FCF0062E44C /* HistoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryUseCase.swift; sourceTree = "<group>"; };
+		6A3625D728450FED0062E44C /* DefaultHistoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHistoryUseCase.swift; sourceTree = "<group>"; };
+		6A3625DA2845C9120062E44C /* UIControl + ButtonPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl + ButtonPublisher.swift"; sourceTree = "<group>"; };
 		6AA99FBA282BD56A002554FE /* CodingTestTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingTestTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA99FBD282BD56B002554FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AA99FBF282BD56B002554FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,7 +100,6 @@
 		6A2D34A7282E85E900A1EEC2 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				6A2D34E3282F7AF300A1EEC2 /* Colors.swift */,
 				6AA99FBD282BD56B002554FE /* AppDelegate.swift */,
 				6AA99FBF282BD56B002554FE /* SceneDelegate.swift */,
 			);
@@ -123,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				6A3625C32844F3E00062E44C /* CTSetting */,
+				6A3625D328450FB60062E44C /* History */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -140,6 +152,7 @@
 		6A36256D284209220062E44C /* HistoryScene */ = {
 			isa = PBXGroup;
 			children = (
+				6A3625CB28450DAF0062E44C /* Coordinator */,
 				6A362572284209640062E44C /* ViewModel */,
 				6A362571284209600062E44C /* View */,
 			);
@@ -183,6 +196,7 @@
 		6A362572284209640062E44C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				6A3625D128450F770062E44C /* HistoryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -213,6 +227,7 @@
 		6A3625A72843900E0062E44C /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				6A3625D92845C8B80062E44C /* Extension */,
 				6A3625B82844A8810062E44C /* Constant */,
 			);
 			path = Util;
@@ -296,6 +311,49 @@
 				6A3625C52844F3F20062E44C /* CTSettingUseCase.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6A3625CB28450DAF0062E44C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625CF28450E4D0062E44C /* DefaultHistoryCoordinator.swift */,
+				6A3625CC28450DB80062E44C /* Protocol */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		6A3625CC28450DB80062E44C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625CD28450E350062E44C /* HistoryCoordinator.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6A3625D328450FB60062E44C /* History */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625D728450FED0062E44C /* DefaultHistoryUseCase.swift */,
+				6A3625D428450FBC0062E44C /* Protocol */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		6A3625D428450FBC0062E44C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625D528450FCF0062E44C /* HistoryUseCase.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6A3625D92845C8B80062E44C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D34E3282F7AF300A1EEC2 /* UIColor + CustomColor.swift */,
+				6A3625DA2845C9120062E44C /* UIControl + ButtonPublisher.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		6AA99FB1282BD56A002554FE = {
@@ -439,22 +497,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A3625D628450FCF0062E44C /* HistoryUseCase.swift in Sources */,
 				6A3625C82844F4090062E44C /* DefaultCTSettingUseCase.swift in Sources */,
+				6A3625D028450E4D0062E44C /* DefaultHistoryCoordinator.swift in Sources */,
 				6A3625BA2844A88D0062E44C /* TabBarPage.swift in Sources */,
 				6A3625B32843BE970062E44C /* DefaultAppCoordinator.swift in Sources */,
 				6A3625B52843C50E0062E44C /* DefaultTabBarCoordinator.swift in Sources */,
+				6A3625CE28450E350062E44C /* HistoryCoordinator.swift in Sources */,
 				6A3625B72843C5B00062E44C /* TabBarCoordinator.swift in Sources */,
 				6A2D34D3282EBC2F00A1EEC2 /* CTSettingViewController.swift in Sources */,
-				6A2D34E4282F7AF300A1EEC2 /* Colors.swift in Sources */,
+				6A2D34E4282F7AF300A1EEC2 /* UIColor + CustomColor.swift in Sources */,
 				6A3625AF2843B8210062E44C /* CoordinatorFinishDelegate.swift in Sources */,
 				6AA99FBE282BD56B002554FE /* AppDelegate.swift in Sources */,
 				6A3625C22844F32C0062E44C /* CTSettingViewModel.swift in Sources */,
 				6A3625C02844AD7E0062E44C /* DefaultCTSettingCoordinator.swift in Sources */,
+				6A3625D228450F770062E44C /* HistoryViewModel.swift in Sources */,
 				6AA99FC0282BD56B002554FE /* SceneDelegate.swift in Sources */,
+				6A3625DB2845C9120062E44C /* UIControl + ButtonPublisher.swift in Sources */,
 				6A3625B12843B8EB0062E44C /* AppCoordinator.swift in Sources */,
 				6A3625BE2844AD1F0062E44C /* CTSettingCoordinator.swift in Sources */,
 				6A3625CA2844F6A50062E44C /* CoordinatorType.swift in Sources */,
 				6A2D34D5282EBC6400A1EEC2 /* HistoryViewController.swift in Sources */,
+				6A3625D828450FED0062E44C /* DefaultHistoryUseCase.swift in Sources */,
 				6A3625AC2843B7E00062E44C /* Coordinator.swift in Sources */,
 				6A3625C62844F3F20062E44C /* CTSettingUseCase.swift in Sources */,
 			);
