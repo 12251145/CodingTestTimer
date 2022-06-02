@@ -5,8 +5,9 @@
 //  Created by Hoen on 2022/05/30.
 //
 
-import Foundation
+import Combine
+import UIKit
 
 protocol CTSettingUseCase {
-    
+
 }

@@ -30,6 +30,8 @@
 		6A3625D628450FCF0062E44C /* HistoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625D528450FCF0062E44C /* HistoryUseCase.swift */; };
 		6A3625D828450FED0062E44C /* DefaultHistoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625D728450FED0062E44C /* DefaultHistoryUseCase.swift */; };
 		6A3625DB2845C9120062E44C /* UIControl + ButtonPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625DA2845C9120062E44C /* UIControl + ButtonPublisher.swift */; };
+		6A3625DD2847B95E0062E44C /* UIView + ShadowEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625DC2847B95E0062E44C /* UIView + ShadowEffect.swift */; };
+		6A3625E02848A0B60062E44C /* SmoothedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3625DF2848A0B60062E44C /* SmoothedView.swift */; };
 		6AA99FBE282BD56B002554FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FBD282BD56B002554FE /* AppDelegate.swift */; };
 		6AA99FC0282BD56B002554FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FBF282BD56B002554FE /* SceneDelegate.swift */; };
 		6AA99FC7282BD56D002554FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA99FC6282BD56D002554FE /* Assets.xcassets */; };
@@ -71,6 +73,8 @@
 		6A3625D528450FCF0062E44C /* HistoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryUseCase.swift; sourceTree = "<group>"; };
 		6A3625D728450FED0062E44C /* DefaultHistoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHistoryUseCase.swift; sourceTree = "<group>"; };
 		6A3625DA2845C9120062E44C /* UIControl + ButtonPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl + ButtonPublisher.swift"; sourceTree = "<group>"; };
+		6A3625DC2847B95E0062E44C /* UIView + ShadowEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + ShadowEffect.swift"; sourceTree = "<group>"; };
+		6A3625DF2848A0B60062E44C /* SmoothedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothedView.swift; sourceTree = "<group>"; };
 		6AA99FBA282BD56A002554FE /* CodingTestTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingTestTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA99FBD282BD56B002554FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AA99FBF282BD56B002554FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -236,6 +240,7 @@
 		6A3625A82843B61F0062E44C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6A3625DE2848A0A10062E44C /* View */,
 				6A3625A92843B6360062E44C /* Coordinator */,
 			);
 			path = Common;
@@ -352,8 +357,17 @@
 			children = (
 				6A2D34E3282F7AF300A1EEC2 /* UIColor + CustomColor.swift */,
 				6A3625DA2845C9120062E44C /* UIControl + ButtonPublisher.swift */,
+				6A3625DC2847B95E0062E44C /* UIView + ShadowEffect.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		6A3625DE2848A0A10062E44C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A3625DF2848A0B60062E44C /* SmoothedView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6AA99FB1282BD56A002554FE = {
@@ -514,7 +528,9 @@
 				6A3625D228450F770062E44C /* HistoryViewModel.swift in Sources */,
 				6AA99FC0282BD56B002554FE /* SceneDelegate.swift in Sources */,
 				6A3625DB2845C9120062E44C /* UIControl + ButtonPublisher.swift in Sources */,
+				6A3625DD2847B95E0062E44C /* UIView + ShadowEffect.swift in Sources */,
 				6A3625B12843B8EB0062E44C /* AppCoordinator.swift in Sources */,
+				6A3625E02848A0B60062E44C /* SmoothedView.swift in Sources */,
 				6A3625BE2844AD1F0062E44C /* CTSettingCoordinator.swift in Sources */,
 				6A3625CA2844F6A50062E44C /* CoordinatorType.swift in Sources */,
 				6A2D34D5282EBC6400A1EEC2 /* HistoryViewController.swift in Sources */,

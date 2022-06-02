@@ -15,4 +15,5 @@ extension UIColor {
     class var buttonBlue: UIColor? { return UIColor(named: "buttonBlue") }
     class var buttonLight: UIColor? { return UIColor(named: "buttonLight") }
     class var textBasic: UIColor? { return UIColor(named: "textBasic") }
+    class var graph: UIColor? { return UIColor(named: "graph") }
 }

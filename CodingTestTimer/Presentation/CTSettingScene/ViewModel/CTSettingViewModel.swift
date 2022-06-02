@@ -6,7 +6,7 @@
 //
 
 import Combine
-import Foundation
+import UIKit
 
 final class CTSettingViewModel {
     weak var coordinator: CTSettingCoordinator?
@@ -15,5 +15,25 @@ final class CTSettingViewModel {
     init(coordinator: CTSettingCoordinator, ctSettingUseCase: CTSettingUseCase) {
         self.coordinator = coordinator
         self.ctSettingUseCase = ctSettingUseCase
+    }
+    
+    struct Input {
+        let viewDidLoadEvent: AnyPublisher<Void, Never>
+    }
+    
+    struct Output {
+        
+    }
+    
+    func transform(input: Input, subscriptions: inout Set<AnyCancellable>) -> Output {
+        let output = Output()
+        
+        input.viewDidLoadEvent
+            .sink { _ in
+                print("CTSettintViewController - viewDidLoad")
+            }
+            .store(in: &subscriptions)
+        
+        return output
     }
 }
