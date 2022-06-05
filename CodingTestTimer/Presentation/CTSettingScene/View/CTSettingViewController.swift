@@ -32,6 +32,11 @@ class CTSettingViewController: UIViewController {
         return stackView
     }()
     
+    private lazy var plusHalfHourButton: UIButton = createTimeSettingButton(amount: 0.5)
+    private lazy var plusHourButton: UIButton = createTimeSettingButton(amount: 1.0)
+    private lazy var substractHalfHourButton: UIButton = createTimeSettingButton(amount: -0.5)
+    private lazy var substractHourButton: UIButton = createTimeSettingButton(amount: -1.0)
+    
     private lazy var devider: UIView = {
         let rect = UIView()
         
@@ -55,12 +60,20 @@ class CTSettingViewController: UIViewController {
         return button
     }()
     
-    
-    private lazy var plusHalfHourButton: UIButton = createTimeSettingButton(amount: 0.5)
-    private lazy var plusHourButton: UIButton = createTimeSettingButton(amount: 1.0)
-    private lazy var substrackHalfHourButton: UIButton = createTimeSettingButton(amount: -0.5)
-    private lazy var substrackHourButton: UIButton = createTimeSettingButton(amount: -1.0)
-
+    private lazy var testButton: UIButton = {
+        let button = UIButton()
+        var config = UIButton.Configuration.filled()
+        
+        config.title = "문제 추가 테스트"
+        
+        config.baseBackgroundColor = .lightText
+        config.buttonSize = .large
+        config.cornerStyle = .capsule
+        
+        button.configuration = config
+        
+        return button
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,7 +101,7 @@ private extension CTSettingViewController {
         self.view.addSubview(timeSettingButtonsStack)
         self.timeSettingButtonsStack.translatesAutoresizingMaskIntoConstraints = false
         
-        let _ = [substrackHourButton, substrackHalfHourButton, plusHalfHourButton, plusHourButton].map {
+        let _ = [substractHourButton, substractHalfHourButton, plusHalfHourButton, plusHourButton].map {
             self.timeSettingButtonsStack.addArrangedSubview($0)
         }
         
@@ -118,15 +131,32 @@ private extension CTSettingViewController {
             self.startButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
             self.startButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16)
         ])
+        
+        // testButton
+        self.view.addSubview(testButton)
+        self.testButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            self.testButton.bottomAnchor.constraint(equalTo: self.startButton.topAnchor, constant: -16),
+            self.testButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
+            self.testButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16)
+        ])
     }
     
     func bindViewModel() {
-        let _ = viewModel?.transform(
+        let output = viewModel?.transform(
             input: CTSettingViewModel.Input(
-                viewDidLoadEvent: Just(()).eraseToAnyPublisher()
+                viewDidLoadEvent: Just(()).eraseToAnyPublisher(),
+                testButtonEvent: self.testButton.publisher(for: .touchUpInside).eraseToAnyPublisher()
             ),
             subscriptions: &subscriptions
         )
+        
+        output?.problems
+            .sink(receiveValue: { problems in
+                print(problems.count)
+            })
+            .store(in: &subscriptions)
     }
     
     func createTimeSettingButton(amount: Double) -> UIButton {

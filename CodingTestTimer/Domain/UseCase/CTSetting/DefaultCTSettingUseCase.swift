@@ -9,5 +9,9 @@ import Combine
 import UIKit
 
 final class DefaultCTSettingUseCase: CTSettingUseCase {
-
+    var problems = CurrentValueSubject<[Problem], Never>([])
+    
+    func addProblem() {
+        problems.value.append(Problem(difficulty: .three, checkEfficiency: true))
+    }
 }

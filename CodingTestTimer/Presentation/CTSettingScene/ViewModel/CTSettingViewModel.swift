@@ -19,10 +19,11 @@ final class CTSettingViewModel {
     
     struct Input {
         let viewDidLoadEvent: AnyPublisher<Void, Never>
+        let testButtonEvent: AnyPublisher<Void, Never>
     }
     
     struct Output {
-        
+        var problems = CurrentValueSubject<[Problem], Never>([])
     }
     
     func transform(input: Input, subscriptions: inout Set<AnyCancellable>) -> Output {
@@ -31,6 +32,19 @@ final class CTSettingViewModel {
         input.viewDidLoadEvent
             .sink { _ in
                 print("CTSettintViewController - viewDidLoad")
+            }
+            .store(in: &subscriptions)
+        
+        input.testButtonEvent
+            .sink { _ in
+                print("문제 추가 테스트")
+                self.ctSettingUseCase.addProblem()
+            }
+            .store(in: &subscriptions)
+        
+        self.ctSettingUseCase.problems
+            .sink { problems in
+                output.problems.value = problems
             }
             .store(in: &subscriptions)
         

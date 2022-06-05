@@ -41,7 +41,7 @@ final class DefaultTabBarCoordinator: TabBarCoorinator {
     private func configureTabBarItem(of page: TabBarPage) -> UITabBarItem {
         return UITabBarItem (
             title: nil,
-            image: UIImage(systemName: "flame.fill"),
+            image: UIImage(systemName: "flame"),
             tag: page.pageOrderNumber()
         )
     }
