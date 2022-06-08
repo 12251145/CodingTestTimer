@@ -8,6 +8,6 @@
 import UIKit
 
 struct CTSetting {
-    var timeLimit: Int
+    var timeLimit: Double
     var problems: [Problem]
 }

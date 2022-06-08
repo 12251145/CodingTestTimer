@@ -8,5 +8,5 @@
 import Foundation
 
 protocol CTSettingCoordinator: Coordinator {
-    func showCTFlow()
+    func pushCTPreparationViewController(with settingData: CTSetting)
 }

@@ -19,11 +19,13 @@ final class CTSettingViewModel {
     
     struct Input {
         let viewDidLoadEvent: AnyPublisher<Void, Never>
-        let testButtonEvent: AnyPublisher<Void, Never>
+        let startButtonDidTap: AnyPublisher<Void, Never>
+        let addProblemButtonEvent: AnyPublisher<Void, Never>
+        let addTimeButtonEvent: AnyPublisher<Double, Never>
     }
     
     struct Output {
-        var problems = CurrentValueSubject<[Problem], Never>([])
+        var ctSetting = CurrentValueSubject<CTSetting, Never>(CTSetting(timeLimit: 3.0, problems: []))
     }
     
     func transform(input: Input, subscriptions: inout Set<AnyCancellable>) -> Output {
@@ -35,16 +37,35 @@ final class CTSettingViewModel {
             }
             .store(in: &subscriptions)
         
-        input.testButtonEvent
+        input.startButtonDidTap
+            .sink { [weak self] _ in
+                self?.coordinator?.pushCTPreparationViewController(with: self?.ctSettingUseCase.ctSetting.value ?? CTSetting(timeLimit: 3.0, problems: []))
+            }
+            .store(in: &subscriptions)
+        
+        input.addProblemButtonEvent
             .sink { _ in
-                print("문제 추가 테스트")
                 self.ctSettingUseCase.addProblem()
             }
             .store(in: &subscriptions)
         
-        self.ctSettingUseCase.problems
+        input.addTimeButtonEvent
+            .sink { value in                
+                self.ctSettingUseCase.updateTime(value)
+            }
+            .store(in: &subscriptions)
+        
+        self.ctSettingUseCase.ctSetting
+            .map { $0.problems }
             .sink { problems in
-                output.problems.value = problems
+                output.ctSetting.value.problems = problems
+            }
+            .store(in: &subscriptions)
+        
+        self.ctSettingUseCase.ctSetting
+            .map{ $0.timeLimit }
+            .sink { time in
+                output.ctSetting.value.timeLimit = time
             }
             .store(in: &subscriptions)
         

@@ -8,7 +8,6 @@
 import UIKit
 
 final class DefaultCTSettingCoordinator: CTSettingCoordinator {
-    
     var finishDelegate: CoordinatorFinishDelegate?
     var navigationController: UINavigationController
     var ctSettingViewController: CTSettingViewController
@@ -23,15 +22,20 @@ final class DefaultCTSettingCoordinator: CTSettingCoordinator {
     func start() {
         self.ctSettingViewController.viewModel = CTSettingViewModel(
             coordinator: self,
-            ctSettingUseCase: DefaultCTSettingUseCase()
+            ctSettingUseCase: DefaultCTSettingUseCase(ctSetting: CTSetting(timeLimit: 3.0, problems: []))
         )
         self.navigationController.pushViewController(self.ctSettingViewController, animated: true)
     }
     
-    
-    
-    func showCTFlow() {
-        // 코딩 테스트 플로우
+    func pushCTPreparationViewController(with settingData: CTSetting) {
+        let ctPreparationViewController = CTPreparationViewController()
+        ctPreparationViewController.viewModel = CTPreparationViewModel(
+            coordinator: self,
+            ctSettingUseCase: DefaultCTSettingUseCase(ctSetting: settingData),
+            ctPreparationgUseCase: DefaultCTPreparationUseCase()
+        )
+        
+        ctPreparationViewController.hidesBottomBarWhenPushed = true
+        self.navigationController.pushViewController(ctPreparationViewController, animated: true)
     }
-    
 }

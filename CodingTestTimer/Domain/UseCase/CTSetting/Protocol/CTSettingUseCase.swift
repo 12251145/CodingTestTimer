@@ -9,6 +9,8 @@ import Combine
 import UIKit
 
 protocol CTSettingUseCase {
-    var problems: CurrentValueSubject<[Problem], Never> { get set }
+    var ctSetting: CurrentValueSubject<CTSetting, Never> { get set }
+    
     func addProblem()
+    func updateTime(_ amount: Double)
 }

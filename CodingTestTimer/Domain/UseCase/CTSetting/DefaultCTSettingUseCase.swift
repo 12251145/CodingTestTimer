@@ -9,9 +9,19 @@ import Combine
 import UIKit
 
 final class DefaultCTSettingUseCase: CTSettingUseCase {
-    var problems = CurrentValueSubject<[Problem], Never>([])
+    var ctSetting: CurrentValueSubject<CTSetting, Never>
+    
+    init(
+        ctSetting: CTSetting
+    ) {
+        self.ctSetting = CurrentValueSubject<CTSetting, Never>(ctSetting)
+    }
     
     func addProblem() {
-        problems.value.append(Problem(difficulty: .three, checkEfficiency: true))
+        self.ctSetting.value.problems.append(Problem(difficulty: .three, checkEfficiency: false))
+    }
+    
+    func updateTime(_ amount: Double) {
+        self.ctSetting.value.timeLimit += amount
     }
 }
