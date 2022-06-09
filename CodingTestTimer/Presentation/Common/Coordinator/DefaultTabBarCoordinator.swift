@@ -30,7 +30,7 @@ final class DefaultTabBarCoordinator: TabBarCoorinator {
     
     func configureTabBarController(with tabViewControllers: [UIViewController]) {
         self.tabBarController.setViewControllers(tabViewControllers, animated: true)
-        self.tabBarController.selectedIndex = TabBarPage.setting.pageOrderNumber()
+        self.tabBarController.selectedIndex = TabBarPage.codingTest.pageOrderNumber()
         self.tabBarController.view.backgroundColor = .background
         self.tabBarController.tabBar.backgroundColor = .tabBar
         self.tabBarController.tabBar.tintColor = .white
@@ -58,11 +58,12 @@ final class DefaultTabBarCoordinator: TabBarCoorinator {
     
     private func startTabCoordinator(of page: TabBarPage, to tabNavigationController: UINavigationController) {
         switch page {
-        case .setting:
-            let ctSettingCoordinator = DefaultCTSettingCoordinator(tabNavigationController)
-            ctSettingCoordinator.finishDelegate = self
-            self.childCoordinators.append(ctSettingCoordinator)
-            ctSettingCoordinator.start()
+        case .codingTest:
+            let ctHomeCoordinator = DefaultCTHomeCoordinator(tabNavigationController)
+            ctHomeCoordinator.finishDelegate = self
+            self.childCoordinators.append(ctHomeCoordinator)
+            ctHomeCoordinator.start()
+        
         case .history:
             let historyCoordinator = DefaultHistoryCoordinator(tabNavigationController)
             historyCoordinator.finishDelegate = self
@@ -77,3 +78,4 @@ extension DefaultTabBarCoordinator: CoordinatorFinishDelegate {
         self.childCoordinators = childCoordinators.filter({ $0.type != childCoordinator.type })
     }
 }
+

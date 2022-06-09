@@ -9,4 +9,5 @@ import Foundation
 
 protocol CTSettingCoordinator: Coordinator {
     func pushCTPreparationViewController(with settingData: CTSetting)
+    func finish(with settingData: CTSetting)
 }

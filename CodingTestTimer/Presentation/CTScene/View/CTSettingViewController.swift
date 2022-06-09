@@ -8,7 +8,7 @@
 import Combine
 import UIKit
 
-class CTSettingViewController: UIViewController {
+final class CTSettingViewController: UIViewController {
     var viewModel: CTSettingViewModel?
     var subscriptions = Set<AnyCancellable>()
     var addTimeSubject = PassthroughSubject<Double, Never>()

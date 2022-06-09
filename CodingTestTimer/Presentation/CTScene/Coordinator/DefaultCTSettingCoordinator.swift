@@ -8,13 +8,14 @@
 import UIKit
 
 final class DefaultCTSettingCoordinator: CTSettingCoordinator {
-    var finishDelegate: CoordinatorFinishDelegate?
+    weak var finishDelegate: CoordinatorFinishDelegate?
+    weak var settingFinishDelegate: SettingCoordinatorDidFinishDelegate?
     var navigationController: UINavigationController
     var ctSettingViewController: CTSettingViewController
     var type: CoordinatorType = .setting
     var childCoordinators: [Coordinator] = []
     
-    init(_ navigationController: UINavigationController) {
+    required init(_ navigationController: UINavigationController) {
         self.navigationController = navigationController
         self.ctSettingViewController = CTSettingViewController()
     }
@@ -37,5 +38,9 @@ final class DefaultCTSettingCoordinator: CTSettingCoordinator {
         
         ctPreparationViewController.hidesBottomBarWhenPushed = true
         self.navigationController.pushViewController(ctPreparationViewController, animated: true)
+    }
+    
+    func finish(with settingData: CTSetting) {
+        self.settingFinishDelegate?.settingCoordinatorDidFinish(with: settingData)
     }
 }

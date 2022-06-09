@@ -10,7 +10,7 @@ import UIKit
 
 final class DefaultCTPreparationUseCase: CTPreparationUseCase {
     var isTimeOver = CurrentValueSubject<Bool, Never>(false)
-    private let maxTime = 2
+    private let maxTime = 1
     var subscriptions = Set<AnyCancellable>()
     
     func executeTimer() {
@@ -37,3 +37,6 @@ final class DefaultCTPreparationUseCase: CTPreparationUseCase {
         }
     }
 }
+
+
+

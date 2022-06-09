@@ -8,11 +8,11 @@
 import Foundation
 
 enum TabBarPage: String, CaseIterable {
-    case setting, history
+    case codingTest, history
     
     init?(index: Int) {
         switch index {
-        case 0: self = .setting
+        case 0: self = .codingTest
         case 1: self = .history
         default: return nil
         }
@@ -20,7 +20,7 @@ enum TabBarPage: String, CaseIterable {
     
     func pageOrderNumber() -> Int {
         switch self {
-        case .setting:
+        case .codingTest:
             return 0
         case .history:
             return 1

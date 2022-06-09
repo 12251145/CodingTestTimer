@@ -35,6 +35,15 @@
 		6A4D46502850BB9A003B19D8 /* CTPreparationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D464F2850BB9A003B19D8 /* CTPreparationViewModel.swift */; };
 		6A4D46522850BD90003B19D8 /* CTPreparationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D46512850BD90003B19D8 /* CTPreparationUseCase.swift */; };
 		6A4D46542850BDC2003B19D8 /* DefaultCTPreparationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D46532850BDC2003B19D8 /* DefaultCTPreparationUseCase.swift */; };
+		6A4D46562850E2DD003B19D8 /* CTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D46552850E2DD003B19D8 /* CTViewModel.swift */; };
+		6A4D46582850E2EF003B19D8 /* CTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D46572850E2EF003B19D8 /* CTViewController.swift */; };
+		6A4D465E2851F205003B19D8 /* CTCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D465D2851F205003B19D8 /* CTCoordinator.swift */; };
+		6A4D46602851F221003B19D8 /* DefaultCTCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D465F2851F221003B19D8 /* DefaultCTCoordinator.swift */; };
+		6A4D46622851F67D003B19D8 /* SettingCoordinatorDidFinishDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D46612851F67D003B19D8 /* SettingCoordinatorDidFinishDelegate.swift */; };
+		6A4D46642851F8BA003B19D8 /* CTHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D46632851F8BA003B19D8 /* CTHomeCoordinator.swift */; };
+		6A4D46662851F8DF003B19D8 /* DefaultCTHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D46652851F8DF003B19D8 /* DefaultCTHomeCoordinator.swift */; };
+		6A4D46682852057D003B19D8 /* CTUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D46672852057D003B19D8 /* CTUseCase.swift */; };
+		6A4D466A28520589003B19D8 /* DefaultCTUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D466928520589003B19D8 /* DefaultCTUseCase.swift */; };
 		6AA99FBE282BD56B002554FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FBD282BD56B002554FE /* AppDelegate.swift */; };
 		6AA99FC0282BD56B002554FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA99FBF282BD56B002554FE /* SceneDelegate.swift */; };
 		6AA99FC7282BD56D002554FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA99FC6282BD56D002554FE /* Assets.xcassets */; };
@@ -84,6 +93,15 @@
 		6A4D464F2850BB9A003B19D8 /* CTPreparationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTPreparationViewModel.swift; sourceTree = "<group>"; };
 		6A4D46512850BD90003B19D8 /* CTPreparationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTPreparationUseCase.swift; sourceTree = "<group>"; };
 		6A4D46532850BDC2003B19D8 /* DefaultCTPreparationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCTPreparationUseCase.swift; sourceTree = "<group>"; };
+		6A4D46552850E2DD003B19D8 /* CTViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTViewModel.swift; sourceTree = "<group>"; };
+		6A4D46572850E2EF003B19D8 /* CTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTViewController.swift; sourceTree = "<group>"; };
+		6A4D465D2851F205003B19D8 /* CTCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTCoordinator.swift; sourceTree = "<group>"; };
+		6A4D465F2851F221003B19D8 /* DefaultCTCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCTCoordinator.swift; sourceTree = "<group>"; };
+		6A4D46612851F67D003B19D8 /* SettingCoordinatorDidFinishDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCoordinatorDidFinishDelegate.swift; sourceTree = "<group>"; };
+		6A4D46632851F8BA003B19D8 /* CTHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTHomeCoordinator.swift; sourceTree = "<group>"; };
+		6A4D46652851F8DF003B19D8 /* DefaultCTHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCTHomeCoordinator.swift; sourceTree = "<group>"; };
+		6A4D46672852057D003B19D8 /* CTUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTUseCase.swift; sourceTree = "<group>"; };
+		6A4D466928520589003B19D8 /* DefaultCTUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCTUseCase.swift; sourceTree = "<group>"; };
 		6AA99FBA282BD56A002554FE /* CodingTestTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingTestTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA99FBD282BD56B002554FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AA99FBF282BD56B002554FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				6A3625A82843B61F0062E44C /* Common */,
-				6A36256E2842092D0062E44C /* CTSettingScene */,
+				6A36256E2842092D0062E44C /* CTScene */,
 				6A36256D284209220062E44C /* HistoryScene */,
 			);
 			path = Presentation;
@@ -168,14 +186,14 @@
 			path = HistoryScene;
 			sourceTree = "<group>";
 		};
-		6A36256E2842092D0062E44C /* CTSettingScene */ = {
+		6A36256E2842092D0062E44C /* CTScene */ = {
 			isa = PBXGroup;
 			children = (
 				6A3625BB2844AC600062E44C /* Coordinator */,
 				6A362570284209460062E44C /* ViewModel */,
 				6A36256F284209430062E44C /* View */,
 			);
-			path = CTSettingScene;
+			path = CTScene;
 			sourceTree = "<group>";
 		};
 		6A36256F284209430062E44C /* View */ = {
@@ -183,6 +201,7 @@
 			children = (
 				6A2D34D2282EBC2F00A1EEC2 /* CTSettingViewController.swift */,
 				6A4D464D2850BB2B003B19D8 /* CTPreparationViewController.swift */,
+				6A4D46572850E2EF003B19D8 /* CTViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,6 +211,7 @@
 			children = (
 				6A3625C12844F32C0062E44C /* CTSettingViewModel.swift */,
 				6A4D464F2850BB9A003B19D8 /* CTPreparationViewModel.swift */,
+				6A4D46552850E2DD003B19D8 /* CTViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -295,7 +315,9 @@
 		6A3625BB2844AC600062E44C /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				6A4D46652851F8DF003B19D8 /* DefaultCTHomeCoordinator.swift */,
 				6A3625BF2844AD7E0062E44C /* DefaultCTSettingCoordinator.swift */,
+				6A4D465F2851F221003B19D8 /* DefaultCTCoordinator.swift */,
 				6A3625BC2844AC670062E44C /* Protocol */,
 			);
 			path = Coordinator;
@@ -304,7 +326,10 @@
 		6A3625BC2844AC670062E44C /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				6A4D46632851F8BA003B19D8 /* CTHomeCoordinator.swift */,
 				6A3625BD2844AD1F0062E44C /* CTSettingCoordinator.swift */,
+				6A4D465D2851F205003B19D8 /* CTCoordinator.swift */,
+				6A4D46612851F67D003B19D8 /* SettingCoordinatorDidFinishDelegate.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -314,6 +339,7 @@
 			children = (
 				6A3625C72844F4090062E44C /* DefaultCTSettingUseCase.swift */,
 				6A4D46532850BDC2003B19D8 /* DefaultCTPreparationUseCase.swift */,
+				6A4D466928520589003B19D8 /* DefaultCTUseCase.swift */,
 				6A3625C42844F3E80062E44C /* Protocol */,
 			);
 			path = CTSetting;
@@ -324,6 +350,7 @@
 			children = (
 				6A3625C52844F3F20062E44C /* CTSettingUseCase.swift */,
 				6A4D46512850BD90003B19D8 /* CTPreparationUseCase.swift */,
+				6A4D46672852057D003B19D8 /* CTUseCase.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -536,31 +563,40 @@
 				6A3625B32843BE970062E44C /* DefaultAppCoordinator.swift in Sources */,
 				6A3625B52843C50E0062E44C /* DefaultTabBarCoordinator.swift in Sources */,
 				6A3625CE28450E350062E44C /* HistoryCoordinator.swift in Sources */,
+				6A4D46602851F221003B19D8 /* DefaultCTCoordinator.swift in Sources */,
 				6A3625B72843C5B00062E44C /* TabBarCoordinator.swift in Sources */,
+				6A4D46622851F67D003B19D8 /* SettingCoordinatorDidFinishDelegate.swift in Sources */,
 				6A2D34D3282EBC2F00A1EEC2 /* CTSettingViewController.swift in Sources */,
 				6A2D34E4282F7AF300A1EEC2 /* UIColor + CustomColor.swift in Sources */,
 				6A3625AF2843B8210062E44C /* CoordinatorFinishDelegate.swift in Sources */,
+				6A4D46642851F8BA003B19D8 /* CTHomeCoordinator.swift in Sources */,
 				6AA99FBE282BD56B002554FE /* AppDelegate.swift in Sources */,
 				6A3625C22844F32C0062E44C /* CTSettingViewModel.swift in Sources */,
 				6A3625C02844AD7E0062E44C /* DefaultCTSettingCoordinator.swift in Sources */,
 				6A3625D228450F770062E44C /* HistoryViewModel.swift in Sources */,
+				6A4D46682852057D003B19D8 /* CTUseCase.swift in Sources */,
 				6A4D46522850BD90003B19D8 /* CTPreparationUseCase.swift in Sources */,
 				6AA99FC0282BD56B002554FE /* SceneDelegate.swift in Sources */,
 				6A4D46502850BB9A003B19D8 /* CTPreparationViewModel.swift in Sources */,
 				6A4D46542850BDC2003B19D8 /* DefaultCTPreparationUseCase.swift in Sources */,
 				6AFBE4DB2849B7A600405736 /* Problem.swift in Sources */,
+				6A4D466A28520589003B19D8 /* DefaultCTUseCase.swift in Sources */,
 				6A3625DB2845C9120062E44C /* UIControl + ButtonPublisher.swift in Sources */,
 				6A3625DD2847B95E0062E44C /* UIView + ShadowEffect.swift in Sources */,
 				6AFBE4DD2849B82E00405736 /* CTSetting.swift in Sources */,
 				6A3625B12843B8EB0062E44C /* AppCoordinator.swift in Sources */,
 				6A3625BE2844AD1F0062E44C /* CTSettingCoordinator.swift in Sources */,
+				6A4D465E2851F205003B19D8 /* CTCoordinator.swift in Sources */,
+				6A4D46662851F8DF003B19D8 /* DefaultCTHomeCoordinator.swift in Sources */,
 				6A4D464E2850BB2B003B19D8 /* CTPreparationViewController.swift in Sources */,
 				6A3625CA2844F6A50062E44C /* CoordinatorType.swift in Sources */,
 				6A2D34D5282EBC6400A1EEC2 /* HistoryViewController.swift in Sources */,
+				6A4D46562850E2DD003B19D8 /* CTViewModel.swift in Sources */,
 				6AFBE4DF2849B98A00405736 /* ProblemDifficulty.swift in Sources */,
 				6A3625D828450FED0062E44C /* DefaultHistoryUseCase.swift in Sources */,
 				6A3625AC2843B7E00062E44C /* Coordinator.swift in Sources */,
 				6A3625C62844F3F20062E44C /* CTSettingUseCase.swift in Sources */,
+				6A4D46582850E2EF003B19D8 /* CTViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

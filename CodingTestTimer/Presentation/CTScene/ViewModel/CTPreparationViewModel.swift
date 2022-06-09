@@ -39,9 +39,10 @@ final class CTPreparationViewModel {
             .store(in: &subscriptions)
         
         self.ctPreparationUseCase.isTimeOver
-            .sink { isOver in
+            .sink { [weak self] isOver in
                 if isOver {
-                    
+                    let settingData = self?.ctSettingUseCase.ctSetting.value
+                    self?.coordinator?.finish(with: settingData!)
                 }
             }
             .store(in: &subscriptions)
