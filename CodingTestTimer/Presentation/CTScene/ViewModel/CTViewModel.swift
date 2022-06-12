@@ -22,7 +22,7 @@ final class CTViewModel {
     }
     
     struct Output {
-        
+        var ct = CurrentValueSubject<CT, Never>(CT(timeLimit: 100, leftTime: 0, problems: []))
     }
     
     func transform(from input: Input, subscriptions: inout Set<AnyCancellable>) -> Output {
@@ -30,10 +30,33 @@ final class CTViewModel {
         
         input.viewDidLoadEvent
             .sink { _ in
-                print("CTViewController - viewDidLoad")
-                print(self.ctUseCase.ctSetting.value.timeLimit)
+                print("CTViewController - viewDidLoad")                
+                self.ctUseCase.executeTimer()
             }
             .store(in: &subscriptions)
+        
+//        self.ctUseCase.ct
+//            .map { $0.leftTime }
+//            .sink { leftTime in
+//                output.ct.value.leftTime = leftTime
+//            }
+//            .store(in: &subscriptions)
+//
+//        self.ctUseCase.ct
+//            .map { $0.timeLimit }
+//            .sink { timeLimit in
+//                output.ct.value.timeLimit = timeLimit
+//            }
+//            .store(in: &subscriptions)
+        
+        self.ctUseCase.ct
+            .sink { ct in
+                output.ct.value.timeLimit = ct.timeLimit
+                output.ct.value.leftTime = ct.leftTime
+            }
+            .store(in: &subscriptions)
+        
+            
         
         return output
     }

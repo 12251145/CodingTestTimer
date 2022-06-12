@@ -18,7 +18,7 @@ final class DefaultCTPreparationUseCase: CTPreparationUseCase {
         
         Timer.publish(every: 1.0, on: .main, in: .common)
             .autoconnect()
-            .map{ output in
+            .map{ output in                
                 return output.timeIntervalSince(start)
             }
             .map { timeInterval in
@@ -29,14 +29,16 @@ final class DefaultCTPreparationUseCase: CTPreparationUseCase {
             }
             .store(in: &subscriptions)
     }
-    
+}
+
+// MARK: - Private Functions
+private extension DefaultCTPreparationUseCase {
     func updateTimer(with time: Int) {
-        if time == maxTime {
+        if time >= maxTime {
             subscriptions.removeAll()
             self.isTimeOver.send(true)
         }
     }
 }
-
 
 

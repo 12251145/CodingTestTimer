@@ -15,7 +15,7 @@ final class CTSettingViewController: UIViewController {
     
     private lazy var timeLabel: UILabel = {
         let timeLabel = UILabel()
-        timeLabel.font = UIFont.systemFont(ofSize: 70, weight: .medium)
+        timeLabel.font = UIFont.systemFont(ofSize: 50, weight: .medium)
         timeLabel.textColor = .white
         timeLabel.text = ""
         
@@ -148,29 +148,31 @@ private extension CTSettingViewController {
         self.view.addSubview(problemButtonsScrollView)
         self.problemButtonsScrollView.translatesAutoresizingMaskIntoConstraints = false
         
+        self.problemButtonsScrollView.addSubview(scrollViewVStack)
+        self.scrollViewVStack.translatesAutoresizingMaskIntoConstraints = false
+        
         NSLayoutConstraint.activate([
             self.problemButtonsScrollView.topAnchor.constraint(equalTo: self.devider.bottomAnchor),
             self.problemButtonsScrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             self.problemButtonsScrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            self.problemButtonsScrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            self.problemButtonsScrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            
+            self.scrollViewVStack.topAnchor.constraint(equalTo: self.problemButtonsScrollView.topAnchor, constant: 16),
+            self.scrollViewVStack.leadingAnchor.constraint(equalTo: self.problemButtonsScrollView.leadingAnchor, constant: 16),
+            self.scrollViewVStack.trailingAnchor.constraint(equalTo: self.problemButtonsScrollView.trailingAnchor),
+            self.scrollViewVStack.bottomAnchor.constraint(equalTo: self.problemButtonsScrollView.bottomAnchor)
         ])
         
         // start button
         self.view.addSubview(startButton)
         self.startButton.translatesAutoresizingMaskIntoConstraints = false
         
-        self.problemButtonsScrollView.addSubview(scrollViewVStack)
-        self.scrollViewVStack.translatesAutoresizingMaskIntoConstraints = false
+        
         
         NSLayoutConstraint.activate([
             self.startButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
             self.startButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
             self.startButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16),
-            
-            self.scrollViewVStack.topAnchor.constraint(equalTo: self.problemButtonsScrollView.topAnchor, constant: 16),
-            self.scrollViewVStack.leadingAnchor.constraint(equalTo: self.problemButtonsScrollView.leadingAnchor, constant: 16),
-            self.scrollViewVStack.trailingAnchor.constraint(equalTo: self.problemButtonsScrollView.trailingAnchor),
-            self.scrollViewVStack.bottomAnchor.constraint(equalTo: self.problemButtonsScrollView.bottomAnchor)
         ])
         
         // testButton
@@ -206,7 +208,7 @@ private extension CTSettingViewController {
         output?.ctSetting
             .map { $0.timeLimit }
             .sink(receiveValue: { time in
-                self.timeLabel.text = "\(time)"
+                self.timeLabel.text = time.hhmm
             })
             .store(in: &subscriptions)
     }

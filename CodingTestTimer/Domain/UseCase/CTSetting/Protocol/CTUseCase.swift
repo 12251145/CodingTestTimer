@@ -9,5 +9,8 @@ import Combine
 import UIKit
 
 protocol CTUseCase {
-    var ctSetting: CurrentValueSubject<CTSetting, Never> { get set }
+    var ctSetting: CTSetting { get set }
+    var ct: CurrentValueSubject<CT, Never> { get set }
+    
+    func executeTimer()
 }
